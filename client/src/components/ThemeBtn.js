@@ -16,7 +16,8 @@ function ThemeBtn() {
                         setTheme(Themes.light)
                         break;
                 }
-            }} />
+            }}
+        />
     );
 }
 

@@ -48,37 +48,42 @@ body{
     font-style: italic;
 }
 
-.clr1{
-    color: #FFFFFF;
+
+/* custom color themes */
+.tColor1{
+    color: #131022;
 }
-.clr2{
-    color: #555555;
+.tColor2{
+    color: #1f1c2d;
 }
-.clr3{
-    color: #111111;
+.tColor3{
+    color: #2a2838;
+}
+.tColor4{
+    color: #6366f1;
+}
+.tColor5{
+    color: #f3f6ff;
+}
+.tColor6{
+    color: #ffffff;
 }
 
-.Bclr1{
-    background-color: #FFFFFF;
+.bColor1{
+    background-color: #131022;
 }
-.Bclr2{
-    background-color: #CCCCCC;
+.bColor2{
+    background-color: #1f1c2d;
 }
-.Bclr3{
-    background-color: #AAAAAA;
+.bColor3{
+    background-color: #2a2838;
 }
-.Bclr4{
-    background-color: #999999;
+.bColor4{
+    background-color: #6366f1;
 }
-.Bclr5{
-    background-color: #777777;
+.bColor5{
+    background-color: #f3f6ff;
 }
-.Bclr6{
-    background-color: #555555;
-}
-.Bclr7{
-    background-color: #333333;
-}
-.Bclr8{
-    background-color: #111111;
+.bColor6{
+    background-color: #ffffff;
 }
