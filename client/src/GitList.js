@@ -12,7 +12,7 @@ const portfolio = [
     }, {
         name: "Hangman!",
         lang: ["Javascript", "JQuery"],
-        desc: "A classic hangman game made with constructors that can be accessed on a webpage or directly thorugh a terminal using Node.js",
+        desc: "A classic hangman game made with constructors that can be accessed on a webpage or directly thorugh a terminal",
         git: "https://github.com/MaxL999/Hangman",
         link1: "https://maxl999.github.io/Hangman/",
         link1Name: "Webpage",

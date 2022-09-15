@@ -49,41 +49,41 @@ body{
 }
 
 
-/* custom color themes */
-.tColor1{
+/* custom color themes, following a dark to light color gradient*/
+.textColor1{
     color: #131022;
 }
-.tColor2{
+.textColor2{
     color: #1f1c2d;
 }
-.tColor3{
+.textColor3{
     color: #2a2838;
 }
-.tColor4{
+.textColor4{
     color: #6366f1;
 }
-.tColor5{
+.textColor5{
     color: #f3f6ff;
 }
-.tColor6{
+.textColor6{
     color: #ffffff;
 }
 
-.bColor1{
+.backgroundColor1{
     background-color: #131022;
 }
-.bColor2{
+.backgroundColor2{
     background-color: #1f1c2d;
 }
-.bColor3{
+.backgroundColor3{
     background-color: #2a2838;
 }
-.bColor4{
+.backgroundColor4{
     background-color: #6366f1;
 }
-.bColor5{
+.backgroundColor5{
     background-color: #f3f6ff;
 }
-.bColor6{
+.backgroundColor6{
     background-color: #ffffff;
 }

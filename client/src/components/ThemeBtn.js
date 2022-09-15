@@ -1,23 +1,20 @@
-import React, { useContext, useRef } from 'react'
+import React, { useContext } from 'react'
 import { ThemeContext, Themes } from '../context/ThemeContext';
 
 function ThemeBtn() {
-    const { setTheme } = useContext(ThemeContext)
-    const input = useRef();
+    const { theme, setTheme } = useContext(ThemeContext)
+
+    function setThemes(obj) {
+        setTheme(obj)
+        console.log(obj.currentTheme)
+    }
 
     return (
-        <input type="range" min="0" max="1" ref={input}
-            onChange={() => {
-                switch (input.current.valueAsNumber) {
-                    case 0:
-                        setTheme(Themes.dark)
-                        break;
-                    case 1:
-                        setTheme(Themes.light)
-                        break;
-                }
-            }}
-        />
+        <div>
+            <input type="radio" value="Male" name="gender" defaultChecked onChange={e => setThemes(Themes.light)} />
+            <p className={theme.txtClr1}>{theme.currentTheme === "Light" ? "Light" : "Dark"}</p>
+            <input type="radio" value="Female" name="gender" onChange={e => setThemes(Themes.dark)} />
+        </div >
     );
 }
 
