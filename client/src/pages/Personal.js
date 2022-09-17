@@ -3,6 +3,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 import { ThemeContext } from '../context/ThemeContext';
 
+import Navbar from "../components/Navbar";
 import placeholder from '../img/placeholder';
 import tempImage from '../img/tempImage.jpg';
 
@@ -11,7 +12,9 @@ function Personal() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className="container-fluid p-0">
+    <div className={"container-fluid p-0" + theme.bkgrndClr2}>
+      
+      <Navbar />
 
       <div className="row m-0">
 
@@ -47,7 +50,7 @@ function Personal() {
                 <p>3753 W. Wayne Ln. 480-625-5534 Max.a.lewis98@gmail.com</p>
                 <p>
                   Outgoing outdoors enthusiast and tech nerd looking to grow and expand horizons.
-              </p>
+                </p>
               </div>
             </div>
           </ScrollableAnchor>

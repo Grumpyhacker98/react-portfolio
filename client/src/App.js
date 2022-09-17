@@ -6,7 +6,6 @@ import Resume from "./pages/Resume";
 import Personal from "./pages/Personal";
 import Portfolio from "./pages/Portfolio";
 import NoMatch from "./pages/NoMatch";
-import Navbar from "./components/Navbar";
 
 import "./style.css"
 import { ThemeContext, Themes } from "./context/ThemeContext";
@@ -17,17 +16,13 @@ function App() {
   return (
     <Router>
       <ThemeContext.Provider value={{ theme, setTheme }}>
-        <div className={"height" + theme.bkgrndClr2}>
-          <Navbar />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/Resume" component={Resume} />
             <Route exact path="/Personal" component={Personal} />
             <Route exact path="/Portfolio" component={Portfolio} />
-            {/* 404 redirect */}
             <Route component={NoMatch} />
           </Switch>
-        </div>
       </ThemeContext.Provider>
     </Router>
   );

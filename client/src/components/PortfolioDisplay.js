@@ -4,35 +4,36 @@ import PortfolioDisplayProgress from './PortfolioDisplayProgress';
 
 import { ThemeContext } from '../context/ThemeContext';
 
+// grabs json object containing summary of git projects and displays them
 function PortfolioDisplay(props) {
     const { theme } = useContext(ThemeContext)
 
     return (
-        <div className="card text-center h-100">
+        <div className="card text-center h-100 shadow-sm">
 
-            <div className={"card-header d-flex justify-content-between align-items-center" + theme.bg3}>
+            {/* project name and git */}
+            <div className={"card-header d-flex justify-content-between align-items-center shadow-sm " + theme.bkgrndClr1}>
                 <p className={"tHeavy m-0 p-0" + theme.txt1}>{props.name}</p>
 
                 <a href={props.git} className="" target="_blank" rel="noopener noreferrer">
-                    <p className={"tBold m-0" + theme.txt2}>GIT</p></a>
+                    <p className={"tBold m-0" + theme.txtClr3}>GIT</p></a>
             </div>
 
-            <div className={"card-body"+ theme.bg2}>
-
-                <h6 className="text-muted d-flex justify-content-around mb-3">
+            {/* tech utilized */}
+            <div className={"card-body" + theme.bg2}>
+                <h6 className="text-muted d-flex justify-content-around my-2">
                     {props.lang.map((msg, i) => (
                         <p key={i} className={"m-0 tItalic" + theme.txt1}>{msg}</p>
                     ))}
                 </h6>
-
-                <p className="card-text">{props.desc}</p>
-
+                <p className="card-text my-2">{props.desc}</p>
             </div>
 
             {/* put updated time or a color indicator for how finished the project is */}
             <PortfolioDisplayProgress progress={props.progress} />
 
-            <div className={"card-footer d-flex justify-content-start" + theme.bg3}>
+            {/* links, the second link renders conditionally*/}
+            <div className={"card-footer d-flex justify-content-start " + theme.bg3}>
 
                 <div className="d-block">
                     <a href={props.link1} className={"btn m-1" + theme.btn1}
