@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import ThemeBtn from '../components/ThemeBtn';
-import Navbar from "../components/Navbar";
 
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -10,7 +9,7 @@ function HomePage() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className={"container-fluid height jumbotron m-0 " + theme.bkgrndClr3}>
+    <div className={"container-fluid height m-0" + theme.bkgrndClr3}>
 
       <div className="text-center p-5">
         <h2 className={"text-bold " + theme.txtClr1}>Welcome!</h2>
