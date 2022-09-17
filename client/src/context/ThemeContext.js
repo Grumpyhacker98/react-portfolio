@@ -1,6 +1,6 @@
 import React from 'react';
 
-// names for custom color CSS classes inside style.css applied to the app using JSX and react Context
+// injecting names for custom color CSS classes into the app using JSX and react Context
 export const Themes = {
     light: {
         currentTheme: "Light",

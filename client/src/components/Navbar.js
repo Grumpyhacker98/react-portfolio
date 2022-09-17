@@ -13,7 +13,7 @@ function Navbar() {
     return (
         <>
             {path !== "/" &&
-                <nav className={"navbar shadow" + theme.bkgrndClr1}>
+                <nav className={"navbar shadow-sm" + theme.bkgrndClr1}>
                     <ul className="nav">
                         <li className="nav-item">
                             {path === "/Resume"

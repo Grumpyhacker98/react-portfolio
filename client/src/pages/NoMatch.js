@@ -12,10 +12,10 @@ function NoMatch({ location }) {
             
             <Navbar />
 
-            <div className="card p-3 m-2 jumbotron text-center">
+            <div className={"card p-3 m-2 mt-3 jumbotron text-center shadow-sm " + theme.bkgrndClr1}>
                 <div className="card-body">
-                    <h5 className="card-title">Sorry, 404 <code>{location.pathname}</code> not found</h5>
-                    <Link to={"/"}>Return to Homepage</Link>
+                    <h5 className={"card-title" + theme.txtClr1}>Sorry, 404 error. <code>{location.pathname}</code> was not found</h5>
+                    <Link to={"/"} className={theme.txtClr3}>Return to Homepage</Link>
                 </div>
             </div>
         </div>
