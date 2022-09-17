@@ -4,16 +4,17 @@ import { ThemeContext, Themes } from '../context/ThemeContext';
 function ThemeBtn() {
     const { theme, setTheme } = useContext(ThemeContext)
 
-    function setThemes(obj) {
-        setTheme(obj)
-        console.log(obj.currentTheme)
+    function changeTheme(){
+        if(theme.currentTheme === "Light") {
+            setTheme(Themes.dark);
+        } else {
+            setTheme(Themes.light);
+        }
     }
 
     return (
-        <div>
-            <input type="radio" value="Male" name="gender" defaultChecked onChange={e => setThemes(Themes.light)} />
-            <p className={theme.txtClr1}>{theme.currentTheme === "Light" ? "Light" : "Dark"}</p>
-            <input type="radio" value="Female" name="gender" onChange={e => setThemes(Themes.dark)} />
+        <div className={"btn border rounded-pill d-flex p-1 " + theme.bkgrndClr3} onClick={e => changeTheme()}>
+            <p className={"m-0 " + theme.txtClr1}>{theme.currentTheme === "Light" ? "Light" : "Dark"}</p>
         </div >
     );
 }
