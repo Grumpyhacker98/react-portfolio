@@ -34,11 +34,10 @@ function NoMatch({ location }) {
             {
                 active ?
 
-                    <div className={"m-5 text-center shadow border-5 rounded zIndexBottom " + theme.bkgrndClr1} ref={animateRef}>
-                        <div className="card-body">
-                            <h5 className={"card-title" + theme.txtClr1}>Sorry, 404 error. <code>{location.pathname}</code> was not found</h5>
-                            <Link to={"/"} className={theme.txtClr3}>Return to Homepage</Link>
-                        </div>
+                    <div className={"m-5 p-3 text-center shadow border-5 rounded zIndexBottom " + theme.bkgrndClr1} ref={animateRef}>
+                        <h5 className={theme.txtClr1}>Sorry, 404 error.</h5>
+                        <h5 className={theme.txtClr1}><code>{location.pathname}</code> was not found</h5>
+                        <Link to={"/"} className={"pt-2" + theme.txtClr3}>Return to Homepage</Link>
                     </div>
 
                     : null

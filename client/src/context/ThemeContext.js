@@ -4,6 +4,7 @@ import React from 'react';
 export const Themes = {
     light: {
         currentTheme: "Light",
+        highlightBtn: " backgroundColor4",
         txtClr1: " textColor1",
         txtClr2: " textColor2",
         txtClr3: " textColor4",
@@ -17,6 +18,7 @@ export const Themes = {
     },
     dark: {
         currentTheme: "Dark",
+        highlightBtn: " backgroundColor4",
         txtClr1: " textColor6",
         txtClr2: " textColor5",
         txtClr3: " textColor4",

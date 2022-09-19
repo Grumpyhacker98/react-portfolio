@@ -13,7 +13,7 @@ function ThemeBtn() {
     }
 
     return (
-        <div className={"btn border rounded-pill p-1 " + theme.bkgrndClr3} onClick={e => changeTheme()}>
+        <div className={"btn border rounded-pill p-1 " + theme.highlightBtn} onClick={e => changeTheme()}>
             <p className={"m-0 " + theme.txtClr4}>{theme.currentTheme === "Light" ? "Light" : "Dark"}</p>
         </div >
     );

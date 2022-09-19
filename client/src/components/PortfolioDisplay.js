@@ -36,13 +36,13 @@ function PortfolioDisplay(props) {
             <div className={"card-footer d-flex justify-content-start " + theme.bkgrndClr1}>
 
                 <div className="d-block">
-                    <div className={"btn m-1 shadow" + theme.bkgrndClr3}>
-                        <a href={props.link1} target="_blank" rel="noopener noreferrer" className={theme.txtClr1}>{props.link1Name}</a>
+                    <div className={"btn m-1 shadow " + theme.highlightBtn}>
+                        <a href={props.link1} target="_blank" rel="noopener noreferrer" className={theme.txtClr4}>{props.link1Name}</a>
                     </div>
 
                     {props.link2 &&
-                        <div className={"btn m-1 shadow" + theme.bkgrndClr3}>
-                            <a href={props.link2} target="_blank" rel="noopener noreferrer" className={theme.txtClr1}>{props.link2Name}</a>
+                        <div className={"btn m-1 shadow " + theme.highlightBtn}>
+                            <a href={props.link2} target="_blank" rel="noopener noreferrer" className={theme.txtClr4}>{props.link2Name}</a>
                         </div>
                     }
                 </div>
