@@ -1,7 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import ThemeBtn from './ThemeBtn';
+
+import { gsap } from "gsap";
+
 import { ThemeContext } from '../context/ThemeContext';
+
+import ThemeBtn from './ThemeBtn';
 
 function Navbar() {
     const location = useLocation()
@@ -9,11 +13,17 @@ function Navbar() {
 
     const { theme } = useContext(ThemeContext)
 
+    const animateRef = useRef()
+
+    useEffect(() => {
+        gsap.from(animateRef.current, { y: '100%', ease: 'elastic' });
+    }, []);
+
     // render the navbar if its not index page, render the links for specific pages
     return (
         <>
             {path !== "/" &&
-                <nav className={"navbar shadow-sm" + theme.bkgrndClr1}>
+                <nav className={"navbar shadow-sm zIndexTop " + theme.bkgrndClr1} ref={animateRef}>
                     <ul className="nav">
                         <li className="nav-item">
                             {path === "/Resume"

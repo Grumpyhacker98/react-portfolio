@@ -7,6 +7,14 @@
     max-height: 100vh;
 }
 
+.zIndexTop{
+    z-index: 5;
+}
+
+.zIndexBottom{
+    z-index: 5;
+}
+
 /* bootstrap grid breakpoints
 576 sm
 768 md

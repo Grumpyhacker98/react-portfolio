@@ -6,6 +6,7 @@
   "homepage": "./",
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "gsap": "^3.11.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
