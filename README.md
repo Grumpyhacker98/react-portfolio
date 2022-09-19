@@ -1,10 +1,10 @@
-This is my personal portfolio website
+This is my personal portfolio website /n/n
 
-tech used:
-express, node.js  -  backend
-react  -  frontend
-boostrap - CSS framework and styling
-GSAP - animations
+tech used: /n
+express, node.js  -  backend /n
+react  -  frontend /n
+boostrap - CSS framework and styling /n
+GSAP - animations /n
 
 app breakdown
 server.js  -  the backend that hosts the website online
