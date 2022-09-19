@@ -30,37 +30,38 @@ const portfolio = [
         link2Name: false,
         progress: 80
     }, {
-        name: "Burger-Breakin",
-        lang: ["MYSQL", "Handlebars", "Heroku"],
+        name: "Burger-Break-Down",
+        lang: ["MYSQL", "React", "Heroku"],
         desc: "A simple app where you can create and parse data using MySQL, deployed unto the cloud with Heroku",
         git: "https://github.com/MaxL999/BurgerBreakIn",
-        link1: "https://burger-handlebars999.herokuapp.com/",
+        link1: "https://burger-break-down.herokuapp.com/",
         link1Name: "Heroku",
         link2: false,
         link2Name: false,
-        progress: 60
-    }, {
-        name: "Match Pairs",
-        lang: ["React-Spring", "Heroku"],
-        desc: "Match pairs of tarot cards together, how good is your memory?",
-        git: "",
-        link1: "https://react-clickergame.herokuapp.com/",
-        link1Name: "Heroku",
-        link2: false,
-        link2Name: false,
-        progress: 30
-    },
-    {
-        name: "UnBore Me",
-        lang: ["API","Bootstrap"],
-        desc: "API search for nearby events, then google maps search the exact location!",
-        git: "https://github.com/MaxL999/UnBoreMe",
-        link1: "caleb-mattson.github.io/project-01/",
-        link1Name: "Temp",
-        link2: false,
-        link2Name: false,
-        progress: 60
-    },
+        progress: 80
+    }
+    // , {
+    //     name: "Match Pairs",
+    //     lang: ["React-Spring", "Heroku"],
+    //     desc: "Match pairs of tarot cards together, how good is your memory?",
+    //     git: "",
+    //     link1: "https://react-clickergame.herokuapp.com/",
+    //     link1Name: "Heroku",
+    //     link2: false,
+    //     link2Name: false,
+    //     progress: 30
+    // },
+    // {
+    //     name: "UnBore Me",
+    //     lang: ["API","Bootstrap"],
+    //     desc: "API search for nearby events, then google maps search the exact location!",
+    //     git: "https://github.com/MaxL999/UnBoreMe",
+    //     link1: "caleb-mattson.github.io/project-01/",
+    //     link1Name: "Temp",
+    //     link2: false,
+    //     link2Name: false,
+    //     progress: 60
+    // },
 
     // {
     //     name: "",
