@@ -39,7 +39,17 @@ const portfolio = [
         link2: false,
         link2Name: false,
         progress: 80
-    }
+    }, {
+        name: "Conways Game",
+        lang: ["JQuery"],
+        desc: "Conways game is a simple set of rules and a 2d grid that can create esoteric lifeforms",
+        git: "https://github.com/Grumpyhacker98/Conways-Game",
+        link1: "https://grumpyhacker98.github.io/Conways-Game/",
+        link1Name: "Webpage",
+        link2: false,
+        link2Name: false,
+        progress: 65
+    },
     // , {
     //     name: "Match Pairs",
     //     lang: ["React-Spring", "Heroku"],
@@ -71,7 +81,8 @@ const portfolio = [
     //     link1: "",
     //     link1Name: "",
     //     link2: "",
-    //     link2Name: ""
+    //     link2Name: "",
+    //     progress: 0,
     // },
 ]
 
